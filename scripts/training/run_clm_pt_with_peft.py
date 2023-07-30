@@ -544,9 +544,9 @@ def main():
 
     model_vocab_size = model.get_output_embeddings().weight.size(0)
     if not (
-       (model_vocab_size==32000 and len(tokenizer)==49953) or \
+       (model_vocab_size==32000 and len(tokenizer)==44896) or \
        (model_vocab_size==32000 and len(tokenizer)==32000) or \
-       (model_vocab_size==49953 and len(tokenizer)==49953) or \
+       (model_vocab_size==44896 and len(tokenizer)==44896) or \
        (model_vocab_size==49954 and len(tokenizer)==49954)
     ):
         raise ValueError(
